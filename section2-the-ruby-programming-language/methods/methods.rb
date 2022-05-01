@@ -1,22 +1,22 @@
 # define methods for arithmetic calculations
 def add(first_num, second_num)
-    first_num.to_f + second_num.to_f
+  first_num.to_f + second_num.to_f
 end
 
 def subtract(first_num, second_num)
-    first_num.to_f - second_num.to_f
+  first_num.to_f - second_num.to_f
 end
 
 def multiply(first_num, second_num)
-    first_num.to_f * second_num.to_f
+  first_num.to_f * second_num.to_f
 end
 
 def divide(first_num, second_num)
-    first_num.to_f / second_num.to_f
+  first_num.to_f / second_num.to_f
 end
 
 def mod(first_num, second_num)
-    first_num.to_f % second_num.to_f
+  first_num.to_f % second_num.to_f
 end
 
 puts "Simple Calculator"
@@ -38,25 +38,25 @@ user_entry = gets.chomp
 
 # using branching to check for different conditions (arithmetic operations chosen)
 if user_entry == "1"
-    puts "You have chosen addition"
-    result = add(first_number, second_number)
-	puts "The result of addition is #{result}"
+  puts "You have chosen addition"
+  result = add(first_number, second_number)
+  puts "The result of addition is #{result}"
 elsif user_entry == "2"
-    puts "You have chosen subtraction"
-    result = subtract(first_number, second_number)
-	puts "The result of subtraction is #{result}"
+  puts "You have chosen subtraction"
+  result = subtract(first_number, second_number)
+  puts "The result of subtraction is #{result}"
 elsif user_entry == "3"
-    puts "You have chosen multiplication"
-    result = multiply(first_number, second_number)
-	puts "The result of multiplication is #{result}"
+  puts "You have chosen multiplication"
+  result = multiply(first_number, second_number)
+  puts "The result of multiplication is #{result}"
 elsif user_entry == "4"
-    puts "You have chosen division"
-    result = divide(first_number, second_number)
-	puts "The result of division is #{result}"
+  puts "You have chosen division"
+  result = divide(first_number, second_number)
+  puts "The result of division is #{result}"
 elsif user_entry == "5"
-    puts "You have chosen mod"
-    result = mod(first_number, second_number)
-	puts "The result of mod is #{result}"
+  puts "You have chosen mod"
+  result = mod(first_number, second_number)
+  puts "The result of mod is #{result}"
 else
-    puts "Invalid entry"
+  puts "Invalid entry"
 end
