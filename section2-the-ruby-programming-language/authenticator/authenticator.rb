@@ -3,8 +3,8 @@
 
 # create hash using symbol as keys
 users = [
-  { username: "Jack", password: "beanstalk"},
-  { username: "Marry", password: "littlelamb"}
+  {username: "Jack", password: "beanstalk"},
+  {username: "Marry", password: "littlelamb"}
 ]
 
 puts "Welcome to the authenticator"
@@ -17,7 +17,7 @@ puts "If password is correct, you will get back the user object"
 def auth_user(username, password, users)
   users.each do |user|
     if user[:username] == username && user[:password] == password
-      puts "Welcome back, #{ username }!"
+      puts "Welcome back, #{username}!"
       puts user
       break
     else
