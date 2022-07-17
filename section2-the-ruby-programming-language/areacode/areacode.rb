@@ -26,7 +26,8 @@ end
 # get hash and key and print out the corresponding value
 def get_area_code(hash, key)
   # using .capitalize so both "city" and "City" will be true
-  capitalized_key = key.capitalize
+#   capitalized_key = key.capitalize
+  capitalized_key = key.split(" ").map{|x| x.capitalize}.join(" ")
   if hash.keys.include? capitalized_key
     puts "The area code for #{capitalized_key} is #{hash[capitalized_key]}"
   else
@@ -42,7 +43,7 @@ loop do
   puts
   puts "This program will take city names as input from the user and lookup for area code"
   puts "Do you want to lookup an area code based on a city?(Y/N)"
-  # using .downcase so y and Y will both be true
+  # using .downcase so both "y" and "Y" will be true
   input = gets.chomp.downcase
   break if input != "y"
   puts "Which city do you want the area code for?"
